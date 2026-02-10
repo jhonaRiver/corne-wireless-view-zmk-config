@@ -1,0 +1,22 @@
+/**
+ * Alpha layer - Colemak-DH
+ */
+
+/ {
+  keymap {
+    compatible = "zmk,keymap";
+
+    colemak_dh_layer {
+      display-name = "L1";
+      bindings = <
+        &kp TAB  &kp Q  &kp W  &kp F  &kp P  &kp B  &kp J  &kp L  &kp U  &kp Y  &kp SEMICOLON  &bkspc_del
+        
+        &kp ESC  &kp A  &hrml LCTRL R  &hrml LALT S  &hrml LCMD T  &hrml MEH G  &hrmr MEH M  &hrmr LCMD N  &hrmr LALT E  &hrmr LCTRL I  &kp O  &kp SQT
+
+        &kp /* Home */ &kp Z  &kp X  &kp C  &kp D  &kp V  &kp K  &kp H  &kp COMMA  &kp DOT  &kp FSLH  &kp /* End */
+
+        &csl Fn  &smart_num L2 0  &smart_shift  &kp SPACE  &kp ENTER  &kp GRAVE
+      >;
+    };
+  };
+};
