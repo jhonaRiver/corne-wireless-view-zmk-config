@@ -2,17 +2,14 @@
 * Numeric, Navigation and Media Controls Layer
 */
 
-/ {
-  keymap {
-    compatible = "zmk,keymap";
-    layer_2 {
-      display-name = "L2";
-      bindings = <
-        &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &kp C_MUTE  &trans
-        &trans  &kp N6  &hrml LCTRL N7  &hrml LALT N8  &hrml LCMD N9  &hrml MEH N0  &hrmr MEH LEFT  &hrmr LCMD DOWN  &hrmr LALT UP  &hrmr LCTRL RIGHT  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRI_DN  &kp C_BRI_UP  &trans  &trans  &trans
-        &trans  &cmo L2  &trans  &trans  &trans  &trans
-      >;
-    };
+&keymap {
+  layer_2 {
+    display-name = "L2";
+    bindings = <
+      &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT  &kp C_MUTE  &trans
+      &trans  &kp N6  &hrml LCTRL N7  &hrml LALT N8  &hrml LCMD N9  &hrml MEH N0  &hrmr MEH LEFT  &hrmr LCMD DOWN  &hrmr LALT UP  &hrmr LCTRL RIGHT  &trans  &trans
+      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp C_BRI_DN  &kp C_BRI_UP  &trans  &trans  &trans
+      &trans  &cmo L2  &trans  &trans  &trans  &trans
+    >;
   };
 };
